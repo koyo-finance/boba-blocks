@@ -1,0 +1,24 @@
+specVersion: 0.0.5
+description: Indexing all Boba Mainnet Block data
+repository: https://github.com/koyo-finance/boba-blocks
+schema:
+  file: ./schema.graphql
+dataSources:
+  - kind: ethereum/contract
+    name: StableSwap
+    network: boba
+    source:
+      address: "0x9f0a572be1fcfe96e94c0a730c5f4bc2993fe3f6"
+      abi: StableSwap4Pool
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.6
+      language: wasm/assemblyscript
+      entities:
+        - StableSwap
+      abis:
+        - name: StableSwap4Pool
+          file: ./abis/StableSwap4Pool.json
+      blockHandlers:
+        - handler: handleBlock
+      file: ./src/mappings/blocks.ts
