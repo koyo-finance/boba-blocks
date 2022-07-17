@@ -7,10 +7,16 @@
     "codegen": "graph codegen",
     "build": "graph build",
     "build:boba": "graph build --network boba",
-    "create:local": "graph create --node http://localhost:8020/ koyo-finance/boba-blocks",
+    "build:aurora": "graph build --network aurora",
+    "build:moonriver": "graph build --network moonriver",
+    "build:matic": "graph build --network matic",
+    "create:local": "graph create --node http://localhost:8020/ koyo-finance/blocks",
     "deploy:boba:mainnet": "graph deploy --product hosted-service koyo-finance/boba-blocks",
-    "deploy:local": "graph deploy --node http://localhost:8020/ --ipfs http://localhost:5001 koyo-finance/boba-blocks",
-    "remove:local": "graph remove --node http://localhost:8020/ koyo-finance/boba-blocks"
+    "deploy:aurora:mainnet": "graph deploy --product hosted-service koyo-finance/aurora-blocks",
+    "deploy:moonriver:mainnet": "graph deploy --product hosted-service koyo-finance/moonriver-blocks",
+    "deploy:matic:mainnet": "graph deploy --product hosted-service koyo-finance/matic-blocks",
+    "deploy:local": "graph deploy --node http://localhost:8020/ --ipfs http://localhost:5001 koyo-finance/blocks",
+    "remove:local": "graph remove --node http://localhost:8020/ koyo-finance/blocks"
   },
   "dependencies": {},
   "devDependencies": {
