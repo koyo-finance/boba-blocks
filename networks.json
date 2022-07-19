@@ -18,5 +18,10 @@
         "StableSwap": {
             "address": "0x9f0a572be1fcfe96e94c0a730c5f4bc2993fe3f6"
         }
+    },
+    "moonbeam": {
+        "StableSwap": {
+            "address": "0x9f0a572be1fcfe96e94c0a730c5f4bc2993fe3f6"
+        }
     }
 }

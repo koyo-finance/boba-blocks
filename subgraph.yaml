@@ -5,7 +5,7 @@ schema:
 dataSources:
   - kind: ethereum/contract
     name: StableSwap
-    network: matic
+    network: moonbeam
     source:
       abi: StableSwap4Pool
       address: "0x9f0a572be1fcfe96e94c0a730c5f4bc2993fe3f6"
